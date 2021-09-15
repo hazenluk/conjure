@@ -1,3 +1,8 @@
+This is an un-tested modification to the conjure station which should allow clients to use conjure on ports other than 443 (note: registration still occurs on 443). The client should select the port and include it in the Protobuf sent to the station. In order to get this running, the following should be done:
+- [ ] Compile proto/signalling.proto into proto/signalling.rs (and signalling.pb.go in the gotapdance repo).
+- [ ] Modify client to choose port and include in protobuf sent to station during registration (probably set up as a debugging mode first).
+- [ ] Test client-station connectivity and whether port selection works.
+
 <p align="center">
 <a href="https://refraction.network"><img src="https://user-images.githubusercontent.com/5443147/30133006-7c3019f4-930f-11e7-9f60-3df45ee13d9d.png" alt="refract"></a>
 <h1 class="header-title" align="center">Conjure Refraction Station</h1>
